@@ -1,0 +1,385 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+text-decoration: underline;
+}
+body, nav.navigation {
+  margin: 0;
+}
+
+.navigation ul.topnav li a{
+  text-decoration: none;
+  color: white;
+}
+
+.navigation ul.topnav li a:hover{
+  color: black;
+
+}
+.navigation ul.topnav li {
+  list-style: none;
+  padding: 5px 5px 5px 5px;
+}
+.navigation ul.topnav li:first-child {
+  list-style: none;
+  padding: 0px 0px 0px 0px;
+}
+
+ul.topnav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav.navigation, section.things, div.center {
+  background: silver;
+  padding: 10px 10% 10px 10%;
+}
+nav.navigation.shop {
+  background: rgb(64, 133, 24);
+}
+nav.navigation ul{
+  margin: 0;
+}
+
+ul.topnav li.dropdownIcon {
+    display: none;
+}
+
+div.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+div.column {
+  padding: 10px;
+  transition: transform .6s;
+  border-radius: 7px;
+}
+
+div.column:hover {
+  -webkit-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.61);
+  -moz-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.61);
+  box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.61);
+  transform: scale(1.05);
+}
+
+div.column div.overflow p:hover {
+  overflow: visible;
+  white-space: normal;
+}
+
+div.column div.picture a img {
+  width: 240px;
+  height: 180px;
+  border: black;
+  border-radius: 7px;
+}
+
+.column div.overflow p {
+  width: 215px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 5px 0px 5px 0px;
+}
+
+div.picture a img:hover {
+  width: 255px;
+  height: auto;
+}
+/* ---------------------------------------- SCROOL -------- */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  cursor: pointer;
+}
+
+
+/* ---------------------------------------- TOOLTIP -------- */
+
+/* Tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: rgba(53, 29, 29, 0.562);
+  color: rgb(207, 182, 182);
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 5px;
+  width: 75px;
+  bottom: 100%;
+  left: 50%; 
+  margin-left: -60px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* ---------------------------------------- HEART -------- */
+
+.textandheart {
+  display: flex;
+}
+svg {
+  cursor: pointer;
+}
+a.heart {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 0.25;
+  stroke-miterlimit: 10;
+}
+a.heart:hover {
+  fill: red;
+}
+
+
+/* ---------------------------------------- STAR -------- */
+
+.star {
+  color: goldenrod;
+  font-size: 1.3rem;
+}
+.star::before {
+  content: '\2606';
+  cursor: pointer;
+}
+.star:hover::before {
+  color: goldenrod;
+  content: '\2605';
+}
+
+/* ---------------------------------------- PRICE -------- */
+.starandprice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0
+}
+/* ---------------------------------------- LOGO -------- */
+a#logofinal {
+    fill: #fff;
+    stroke:#ffffff;
+    stroke-width:12;
+    stroke-linecap:round;
+    stroke-miterlimit:10;
+}
+
+a#logofinal:hover {
+  stroke:#000000;
+}
+
+
+
+
+div.center {
+  width: 80%;
+  background: url(cover.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  text-align: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-left: 10%; 
+}
+
+.wrapper {
+  position: absolute;
+  width: 60%;
+  top: 50%;
+  transform: translate(-50, -50);
+  text-align: center;
+}
+.st0 {
+              fill: none;
+            }
+
+            .st1 {
+              fill: #fff;
+              stroke: #da0808;
+              stroke-width: 2;
+              stroke-miterlimit: 10;
+            }
+
+            .st2 {
+              font-family: 'Mistral';
+            }
+
+            .st3 {
+              font-size: 71px;
+            }
+
+.st1 {
+  stroke: #fff;
+  fill: rgb(0, 0, 0);
+  stroke-dasharray: 1200;
+  opacity: 10;
+  animation: animate 3s cubic-bezier(0,0.23,1,.1); 
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 1200;
+  }
+  30% {
+    opacity: 10;
+    fill: none;
+    stroke-dashoffset: 1200;
+  }
+  90% {
+    fill: rgb(255, 255, 255,0);
+  }
+  100% {
+  opacity: 10;
+    fill: rgb(255, 255, 255,1);
+    stroke-dashoffset: 0;
+  }
+}
+
+/* ---------------------------------------- MODAL -------- */
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(8, 1, 1, 0.8)
+}
+
+.modal-content {
+  background-color: #f4f4f4;
+  margin: 100px auto;
+  padding: 20px;
+  width: 450px;
+  box-shadow: 0 5px 8px rgba(0,0,0,0.0.2)
+}
+
+.closeBtn {
+  color: aquamarine;
+  float: right;
+  font-size: 30px;
+}
+.closeBtn:hover {
+  color: black;
+  cursor: pointer;
+}
+
+input.inputfild[type=text], input.inputfild[type=password], input.inputfild[type=tel], input.inputfild[type=email], select {
+  width: 100%;
+  margin-top: 0px;
+  height: 2rem;
+  font-size: 0.8rem;
+  padding-left:10px; 
+}
+input.inputfild:focus {
+  outline: none;
+}
+input.inputfild, button, select {
+  border: 1.5px solid  rgb(79, 145, 249);
+  border-radius: 15px;
+}
+p.text {
+  color: rgb(79, 145, 249);
+  padding: 20px 0px 7px 10px;
+}
+nav.navigation ul.list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.navigation ul.list li a{
+  color:  rgb(79, 145, 249);
+  padding-top: 15px;
+}
+.navigation ul.list li a:hover{
+  color:  rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+button.signfild {
+  height: 2rem;
+  margin-top: 20px;
+  width: 100%;
+  font-size: 0.8rem;
+  background-color:  rgb(79, 145, 249);
+}
+
+button.signfild:hover {
+  background-color:  rgb(15, 93, 218);
+  cursor: pointer;
+  color: white;
+}
+
+/* ---------------------------------------- MOBILE -------- */
+
+
+@media screen and (max-width: 680px) {
+  nav.navigation {
+  background: silver;
+  padding: 10px 10px 10px 10px;
+  }
+  ul.topnav{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+  }
+  ul.topnav li{
+    display: none;
+  }
+  ul.topnav li.dropdownIcon {
+    display: block;
+  }
+  ul.topnav.responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+  }
+  ul.topnav.responsive li {
+    display: block;
+  }
+  ul.topnav.responsive li.dropdownIcon {
+    display: block;
+    float: right;
+    position: fixed;
+    top: 10px;
+    right:  10px;
+  }
+.modal-content {
+  background-color: #f4f4f4;
+  margin: 100px auto;
+  padding: 20px;
+  width: 85%;
+  box-shadow: 0 5px 8px rgba(0,0,0,0.0.2)
+}
+}

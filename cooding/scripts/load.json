@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "picture_url": "https://drive.google.com/uc?id=1RTkW7t5cVGyphhNTHdhjQmYPSwcnYY-S",
+    "picture_description": "Awesome scarf !!! ",
+    "price": 1450
+  },
+  {
+    "id": 2,
+    "picture_url": "https://drive.google.com/uc?id=1imSz_xbr_xo_63n1cLpB9tR1Qp0WYh4i",
+    "picture_description": "Handmade scarf with 100 percentage of cotton and ready to wear ",
+    "price": 1550
+  },
+  {
+    "id": 3,
+    "picture_url": "https://drive.google.com/uc?id=1YyJuxEZS5aQUZM8SeAwOwuNenvqdV7dN",
+    "picture_description": "Awesome scarf !!! ",
+    "price": 1650
+  },
+  {
+    "id": 4,
+    "picture_url": "https://drive.google.com/uc?id=1gOuuJQOMR7ycb4_onWYYccmE6aPH95ox",
+    "picture_description": "Awesome scarf !!! ",
+    "price": 1490
+  },
+  {
+    "id": 5,
+    "picture_url": "https://drive.google.com/uc?id=1g5GUYud4-Vp4S7ZHaH0DAPJoodd6bO2T",
+    "picture_description": "Awesome scarf !!! ",
+    "price": 1980
+  }
+]
